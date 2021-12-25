@@ -19,7 +19,7 @@ public class Request {
     private String subject;
     private String description;
     private Date creationDate;
-    private RequestState state;
+    private RequestStage state;
     private User user;
-    private List<RequestState> states = new ArrayList<>();
+    private List<RequestStage> stages = new ArrayList<>();
 }
