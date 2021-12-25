@@ -18,6 +18,7 @@ public class User {
     private String email;
     private String password;
     private List<Request> requests = new ArrayList<>();
+    private List<RequestStage> stages = new ArrayList<>();
 
 
 
