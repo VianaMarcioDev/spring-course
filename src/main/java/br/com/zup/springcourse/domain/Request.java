@@ -1,5 +1,6 @@
 package br.com.zup.springcourse.domain;
 
+import br.com.zup.springcourse.domain.enums.RequestState;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -34,7 +35,7 @@ public class Request {
 
     @Column(length = 12, nullable = false)
     @Enumerated(EnumType.STRING)
-    private RequestStage state;
+    private RequestState state;
 
     @ManyToOne
     @JoinColumn(name = "user_id", nullable = false)
